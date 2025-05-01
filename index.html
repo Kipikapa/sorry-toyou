@@ -2,10 +2,24 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=https://open.spotify.com/track/3WnaUXk97kA566wNuotNnS?si=2392e85d6a3b4f30" />
-  <title>Maaf😔</title>
+  <title>Maaf...</title>
+  <script>
+    window.onload = function() {
+      const links = {
+        1: "https://gifft.me/o/l/d8l95z91yy309h4a41dc3qze",
+        2: "https://open.spotify.com/track/3WnaUXk97kA566wNuotNnS?si=2392e85d6a3b4f30"
+      };
+      const params = new URLSearchParams(window.location.search);
+      const to = params.get("to");
+      if (links[to]) {
+        window.location.href = links[to];
+      } else {
+        document.body.innerHTML = "<p>Link tidak ditemukan.</p>";
+      }
+    };
+  </script>
 </head>
 <body>
-  <p>Jika Anda tidak diarahkan secara otomatis, <a href="https://link-tujuan-anda.com">klik di sini</a>.</p>
+  <p>Mengarahkan Anda...</p>
 </body>
 </html>
